@@ -1,0 +1,10 @@
+---
+- name: Deploy Angular
+  hosts: webservers
+  become: yes
+
+  tasks:
+  - name: Copy to slave
+    copy:
+      src: /opt/project-app/
+      dest: /usr/share/nginx/html
