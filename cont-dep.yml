@@ -1,6 +1,6 @@
 ---
 - name: docker deploy
-  hosts: docker,localhost
+  hosts: docker
   become: yes
 
   tasks:
