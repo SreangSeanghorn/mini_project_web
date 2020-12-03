@@ -1,0 +1,8 @@
+---
+- name: docker deploy
+  hosts: docker,localhost
+  become: yes
+
+  tasks:
+  - name: deploy container
+    shell: sudo docker run --name cont -d -p 82:80 seanghorn/cont-img
