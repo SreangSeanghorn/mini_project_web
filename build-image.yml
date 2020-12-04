@@ -7,7 +7,7 @@
       shell: sudo docker build -t image /opt/project-app/.
     - name: tag image
       shell: sudo docker tag image seanghorn/image
-     - name: log in
-       shell: sudo docker login --username seanghorn --password seanghorn
-     - name: push image
-       shell: sudo docker push seanghorn/image
+    - name: log in
+      shell: sudo docker login --username seanghorn --password seanghorn
+    - name: push image
+      shell: sudo docker push seanghorn/image
