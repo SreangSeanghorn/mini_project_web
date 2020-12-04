@@ -5,7 +5,7 @@
   become_method: sudo
   tasks:
     - name: build image
-      shell: docker build -t image /opt/project-app/.
+      shell: docker build -t image /home/seanghorn/opt/project-app/.
     - name: tag image
       shell: docker tag image seanghorn/image
     - name: log in
