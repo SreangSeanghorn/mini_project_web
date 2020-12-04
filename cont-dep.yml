@@ -5,4 +5,4 @@
 
   tasks:
   - name: deploy container
-    shell: sudo docker run --name cont -d -p 82:80 seanghorn/image
+    shell: sudo docker run --name cont -d -p 88:80 seanghorn/image
